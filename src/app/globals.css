@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #060608;
+    --foreground: #F4F4F0;
+    --gold: #C5A880;
+    --gold-light: #E5C99F;
+    --gold-dark: #8C7350;
+    --charcoal: #121318;
+    --charcoal-light: #1C1E26;
+    --cream: #E8E5DF;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans), system-ui, sans-serif;
+    overflow-x: hidden;
+    selection-background-color: var(--gold);
+    selection-color: #000000;
+  }
+}
+
+/* Custom Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #060608;
+}
+::-webkit-scrollbar-thumb {
+  background: #1C1E26;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A880;
+}
+
+/* Glassmorphism Utility */
+.glass-panel {
+  background: rgba(18, 19, 24, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(197, 168, 128, 0.15);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+.glass-card:hover {
+  border-color: rgba(197, 168, 128, 0.4);
+  box-shadow: 0 40px 80px rgba(197, 168, 128, 0.08);
+}
+
+/* Gold Text Gradient */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F4F4F0 0%, #C5A880 50%, #E5C99F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-glow {
+  box-shadow: 0 0 40px rgba(197, 168, 128, 0.2);
+}
+
+/* Hide cursor on desktop for custom luxury cursor */
+@media (min-width: 1024px) {
+  .custom-cursor-active * {
+    cursor: none !important;
+  }
+}
+
