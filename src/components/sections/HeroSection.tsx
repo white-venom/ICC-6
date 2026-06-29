@@ -15,7 +15,7 @@ export default function HeroSection({ onExploreClick }: { onExploreClick: () => 
         transition={{ duration: 1, delay: 0.8 }}
         className="w-full max-w-7xl flex justify-between items-center pointer-events-auto"
       >
-        <LuxuryLogo size="sm" showText={true} />
+        <LuxuryLogo size="sm" showText={false} />
 
         <nav className="hidden md:flex items-center gap-8 text-xs tracking-widest uppercase text-[#C5A880]/80 font-light">
           <a href="#story" data-cursor-hover className="hover:text-[#F4F4F0] transition-colors">Craftsmanship</a>

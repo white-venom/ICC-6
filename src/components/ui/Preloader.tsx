@@ -46,7 +46,7 @@ export default function Preloader({ onComplete }: { onComplete?: () => void }) {
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 1 }}
             >
-              <LuxuryLogo size="xl" showText={true} />
+              <LuxuryLogo size="xl" showText={false} />
             </motion.div>
           </div>
 
